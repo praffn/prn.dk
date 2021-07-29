@@ -1,8 +1,23 @@
 import { AppProps } from "next/app";
+import withDarkMode, { useDarkMode } from "next-dark-mode";
 import "../styles/globals.css";
+import { useEffect } from "react";
+import DefaultLayout from "../layouts/DefaultLayout";
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+  const darkMode = useDarkMode();
+
+  useEffect(() => {
+    document.documentElement.classList.toggle("dark", darkMode.darkModeActive);
+  }, [darkMode.darkModeActive]);
+
+  const Layout = (Component as any).layout || DefaultLayout;
+
+  return (
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
+  );
 }
 
-export default MyApp;
+export default withDarkMode(MyApp);

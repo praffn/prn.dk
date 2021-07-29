@@ -3,6 +3,7 @@ import { GetStaticPaths, GetStaticProps } from "next";
 import {
   getAllPostSlugs,
   getPostContentFromSlug,
+  parseFrontmatter,
   PostFrontmatter,
 } from "../../lib/posts";
 import { bundleMDX } from "mdx-bundler";
@@ -39,8 +40,15 @@ export default function Post({ code, frontmatter }: PostProps) {
         ) : null}
       </Head>
       <div>
-        <h1>Heheh</h1>
-        {Component ? <Component components={components} /> : null}
+        <article className="mt-16">
+          <header className="text-center">
+            <h1 className="font-display text-7xl">{frontmatter.title}</h1>
+            <p className="mt-2">Published on {frontmatter.prettyDate}</p>
+          </header>
+          <main className="mx-auto mt-16 prose">
+            {Component ? <Component components={components} /> : null}
+          </main>
+        </article>
       </div>
     </>
   );
@@ -69,7 +77,7 @@ export const getStaticProps: GetStaticProps<PostProps> = async ({ params }) => {
   return {
     props: {
       code,
-      frontmatter: frontmatter as PostFrontmatter,
+      frontmatter: parseFrontmatter(frontmatter, slug as string),
     },
   };
 };

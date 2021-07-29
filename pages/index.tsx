@@ -1,9 +1,8 @@
 import { GetStaticProps } from "next";
 import Head from "next/head";
-import Link from "next/link";
-import { useMemo } from "react";
-import StaticCodeSnippet from "../components/StaticCodeSnippet/StaticCodeSnippet";
 import { getRecentPosts, PostInfo } from "../lib/posts";
+import Image from "next/image";
+import prnClayImage from "../assets/prn-clay.png";
 
 interface HomeProps {
   posts: Array<PostInfo>;
@@ -20,16 +19,22 @@ export default function Home({ posts }: HomeProps) {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h1>prn</h1>
-      <p>phillip@praffn.dk</p>
-      <ul>
-        <li>
-          <a href="https://github.com/praffn">GitHub</a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/praffn/">LinkedIn</a>
-        </li>
-      </ul>
+      <div className="border-b border-gray-300">
+        <div className="flex items-center">
+          <div className="flex-1 flex-shrink-0">
+            <p className="font-display text-7xl">
+              I’m Phillip.
+              <br />I build{" "}
+              <span className="text-watermelon-500">digital experiences</span>
+            </p>
+          </div>
+          <div className="flex-1 flex-shrink-0">
+            <div className="max-w-lg m-auto text-[0px]">
+              <Image src={prnClayImage} />
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
   );
 }

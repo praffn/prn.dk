@@ -3,7 +3,6 @@ import Head from "next/head";
 import { getRecentPosts, PostInfo } from "../lib/posts";
 import Image from "next/image";
 import prnClayImage from "../assets/prn-clay.png";
-import underConstructionImage from "../assets/under_construction.png";
 
 interface HomeProps {
   posts: Array<PostInfo>;
@@ -37,9 +36,23 @@ export default function Home({ posts }: HomeProps) {
         </div>
       </div>
 
-      <div>
-        <div className="max-w-xs mx-auto mt-20 mb-20">
-          <Image src={underConstructionImage} />
+      <div className="mt-8 w-1/3">
+        <div className="space-y-4">
+          <p className="">
+            I'm a full stack developer with 8 years of experience in helping
+            companies and organizations build modern, performant, accessible and
+            responsive websites and digital solutions.
+          </p>
+          <p>
+            I've been working freelance as well as at various Danish digital
+            agencies. I'm currently working at{" "}
+            <a href="https://signifly.com" className="underline">
+              Signifly
+            </a>
+            .
+          </p>
+        </div>
+      </div>
         </div>
       </div>
     </main>

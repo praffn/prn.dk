@@ -3,6 +3,7 @@ import Head from "next/head";
 import { getRecentPosts, PostInfo } from "../lib/posts";
 import Image from "next/image";
 import prnClayImage from "../assets/prn-clay.png";
+import underConstructionImage from "../assets/under_construction.png";
 
 interface HomeProps {
   posts: Array<PostInfo>;
@@ -33,6 +34,12 @@ export default function Home({ posts }: HomeProps) {
               <Image src={prnClayImage} />
             </div>
           </div>
+        </div>
+      </div>
+
+      <div>
+        <div className="max-w-xs mx-auto mt-20 mb-20">
+          <Image src={underConstructionImage} />
         </div>
       </div>
     </main>

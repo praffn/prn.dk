@@ -20,23 +20,23 @@ export default function Home({ posts }: HomeProps) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="border-b border-gray-300">
-        <div className="flex items-center">
-          <div className="flex-1 flex-shrink-0">
-            <p className="font-display text-7xl">
+        <div className="flex flex-col md:flex-row items-center">
+          <div className="mt-8 md:mt-0 flex-1 flex-shrink-0">
+            <p className="font-display text-center max-w-xs md:max-w-none md:text-left text-4xl md:text-5xl lg:text-7xl">
               I’m Phillip.
               <br />I build{" "}
               <span className="text-watermelon-500">digital experiences</span>
             </p>
           </div>
-          <div className="flex-1 flex-shrink-0">
-            <div className="max-w-lg m-auto text-[0px]">
+          <div className="mt-8 md:mt-0 flex-1 flex-shrink-0">
+            <div className="max-w-xs  md:max-w-lg m-auto text-[0px]">
               <Image src={prnClayImage} />
             </div>
           </div>
         </div>
       </div>
 
-      <div className="mt-8 w-1/3">
+      <div className="mt-8 sm:w-2/3 md:w-1/2 lg:w-1/3 mb-8">
         <div className="space-y-4">
           <p className="">
             I'm a full stack developer with 8 years of experience in helping

@@ -3,7 +3,7 @@ import Link from "next/link";
 function Header() {
   return (
     <header className="py-4">
-      <div className="container mx-auto py-2 flex items-center">
+      <div className="container px-4 mx-auto py-2 flex items-center">
         <div className="flex-1 flex justify-center">
           <Link href="/">
             <a className="mr-auto font-display text-3xl text-watermelon hover:underline">
@@ -12,7 +12,7 @@ function Header() {
           </Link>
         </div>
 
-        <nav className="flex-1 flex justify-center opacity-0">
+        <nav className="flex-1 flex justify-center hidden">
           <ul className="flex space-x-16">
             <li>Services</li>
             <li>

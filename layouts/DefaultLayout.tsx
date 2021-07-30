@@ -11,7 +11,7 @@ function DefaultLayout({ children }: DefaultLayoutProps) {
     <>
       <SkipToContent href="#main-content" />
       <Header />
-      <main id="main-content" className="mx-auto container">
+      <main id="main-content" className="mx-auto container px-4">
         {children}
       </main>
     </>

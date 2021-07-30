@@ -53,8 +53,6 @@ export default function Home({ posts }: HomeProps) {
           </p>
         </div>
       </div>
-        </div>
-      </div>
     </main>
   );
 }

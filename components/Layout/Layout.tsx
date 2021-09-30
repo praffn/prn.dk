@@ -18,7 +18,7 @@ function Layout({ children, pageTitle, description }: LayoutProps) {
       </Head>
       <main>
         {/* <Header/> */}
-        <div className="content">{children}</div>
+        <div className="content mb-10">{children}</div>
       </main>
     </>
   );

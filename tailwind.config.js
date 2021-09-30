@@ -35,10 +35,13 @@ module.exports = {
           DEFAULT: {
             css: {
               h1: {
-                fontFamily: fontFamilyDisplay,
+                fontSize: "3em",
+                fontWeight: 100,
+                fontFamily: fontFamilyDisplay.join(", "),
               },
               h2: {
-                fontFamily: fontFamilyDisplay,
+                fontSize: "2em",
+                fontFamily: fontFamilyDisplay.join(", "),
                 fontWeight: 500,
               },
             },

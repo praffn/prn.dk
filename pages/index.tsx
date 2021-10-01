@@ -47,8 +47,8 @@ export default function Home({ posts }: HomeProps) {
             responsive websites and digital solutions.
           </p>
           <p>
-            I've been working freelance as well as at various Danish digital
-            agencies. I'm currently working at{" "}
+            I've been working freelance and at various Danish digital agencies.
+            I'm currently working at{" "}
             <a href="https://signifly.com" className="underline">
               Signifly
             </a>

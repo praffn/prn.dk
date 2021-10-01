@@ -31,6 +31,7 @@ export default function Home({ posts }: HomeProps) {
           <div className="mt-8 md:mt-0 flex-1 flex-shrink-0">
             <div className="max-w-xs  md:max-w-lg m-auto text-[0px]">
               <Image
+                placeholder="blur"
                 src={prnClayImage}
                 alt="Claylike cartoon 3D rendering of Phillip Raffnsøe Nilsson giving thumbs-up"
               />

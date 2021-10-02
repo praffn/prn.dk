@@ -24,10 +24,9 @@ class MyDocument extends Document {
             crossOrigin={""}
           />
           <link
-            href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap"
+            href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500&display=swap"
             rel="stylesheet"
           />
-          <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
           <link
             rel="apple-touch-icon"
             sizes="180x180"

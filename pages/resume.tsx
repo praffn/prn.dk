@@ -12,6 +12,9 @@ function Resume() {
         <div className="prose mx-auto mt-24">
           <h1 className="text-center">Résumé</h1>
           <p className="text-center text-sm">Phillip Raffnsøe Nilsson</p>
+          <p className="text-center text-xs">
+            Last updated on <time dateTime="2021-10-02">October 2, 2021</time>
+          </p>
           <div className="mt-8 mb-8 w-32 sm:w-40 md:w-48 mx-auto rounded-full overflow-hidden text-[0px]">
             <Image
               src={prnImage}

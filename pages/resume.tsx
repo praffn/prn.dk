@@ -1,12 +1,19 @@
+import { useRouter } from "next/router";
 import Head from "next/head";
 import Image from "next/image";
 import prnImage from "../public/images/prn.jpg";
+import prnOgImage from "../public/images/resume-prn-og.jpg";
 
 function Resume() {
   return (
     <>
       <Head>
         <title>Résumé - Phillip Raffnsøe Nilsson</title>
+        <meta
+          name="description"
+          content="Resume for full stack software developer Phillip Raffnsøe Nilsson"
+        />
+        <meta property="og:image" content={prnOgImage.src} />
       </Head>
       <div>
         <div className="prose mx-auto mt-24">

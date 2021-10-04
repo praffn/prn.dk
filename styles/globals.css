@@ -16,10 +16,14 @@
 
 .button-link {
   @apply bg-transparent;
-  @apply hover:bg-gray-100;
+  @apply hover:bg-gray-100 dark:hover:bg-gray-900;
   @apply focus:ring-gray-200;
 }
 
 ::selection {
   @apply bg-watermelon-100 bg-opacity-50;
+}
+
+html.dark ::selection {
+  @apply bg-opacity-20;
 }

@@ -9,7 +9,7 @@ function SkipToContent({
 }: SkipToContentProps) {
   return (
     <a
-      className="absolute left-2 top-2 bg-gray-200 bg-opacity-80 px-6 py-8  transform translate-y-[-200%] focus:translate-y-0"
+      className="absolute left-2 top-2 bg-gray-200 dark:bg-gray-900 bg-opacity-80 px-6 py-8  transform translate-y-[-200%] focus:translate-y-0"
       href={href}
     >
       {label}

@@ -1,14 +1,8 @@
-import { GetStaticProps } from "next";
 import Head from "next/head";
-import { getRecentPosts, PostInfo } from "../lib/posts";
 import Image from "next/image";
 import prnClayImage from "../assets/prn-clay.png";
 
-interface HomeProps {
-  posts: Array<PostInfo>;
-}
-
-export default function Home({ posts }: HomeProps) {
+export default function Home() {
   return (
     <main>
       <Head>
@@ -60,13 +54,3 @@ export default function Home({ posts }: HomeProps) {
     </main>
   );
 }
-
-export const getStaticProps: GetStaticProps<HomeProps> = async () => {
-  const posts = await getRecentPosts(2);
-
-  return {
-    props: {
-      posts,
-    },
-  };
-};

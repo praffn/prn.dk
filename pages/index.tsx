@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import prnClayImage from "../assets/prn-clay.png";
+import Sparkle from "../components/Sparkle";
 
 export default function Home() {
   return (
@@ -19,7 +20,14 @@ export default function Home() {
             <p className="font-display text-center max-w-xs md:max-w-none md:text-left text-4xl md:text-5xl lg:text-7xl">
               I’m Phillip.
               <br />I build{" "}
-              <span className="text-watermelon-500">digital experiences</span>
+              <span className="text-watermelon-500">
+                <Sparkle size={20} color="#FFA3AB">
+                  digital
+                </Sparkle>
+                <Sparkle size={20} color="#FFA3AB">
+                  experiences
+                </Sparkle>
+              </span>
             </p>
           </div>
           <div className="mt-8 md:mt-0 flex-1 flex-shrink-0">

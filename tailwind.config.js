@@ -1,4 +1,5 @@
 const defaultConfig = require("tailwindcss/defaultConfig");
+const { rotate, scale } = require("tailwindcss/defaultTheme");
 
 const fontFamilyDisplay = [
   "DM Serif Display",
@@ -29,6 +30,27 @@ module.exports = {
           800: "#CC0012",
           900: "#A3000E",
         },
+      },
+      animation: {
+        growshrink:
+          "growshrink 1500ms cubic-bezier(0.59, 0.14, 0.17, 0.86) forwards",
+        halfspin: "halfspin 1500ms linear forwards",
+      },
+      keyframes: {
+        growshrink: {
+          "0%, 100%": { transform: "scale(0)" },
+          "50%": { transform: "scale(1)" },
+        },
+
+        halfspin: {
+          from: { transform: "rotate(0deg)" },
+          to: { transform: "rotate(180deg)" },
+        },
+        // sparkle: {
+        //   "0%": { transform: "scale(0) rotate(0deg)" },
+        //   "50%": { transform: "scale(1) rotate(90deg)" },
+        //   "100%": { transform: "scale(0) rotate(180deg)" },
+        // },
       },
       typography(theme) {
         return {

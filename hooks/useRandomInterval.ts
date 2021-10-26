@@ -1,6 +1,5 @@
 import { useCallback, useEffect, useRef } from "react";
-
-const random = (min, max) => Math.floor(Math.random() * (max - min)) + min;
+import { randomInt } from "../util/random";
 
 export default function useRandomInterval(
   callback: Function,
@@ -20,7 +19,7 @@ export default function useRandomInterval(
 
     if (isEnabled) {
       const handleTick = () => {
-        const nextTickAt = random(minDelay, maxDelay);
+        const nextTickAt = randomInt(minDelay, maxDelay);
         timeoutId.current = setTimeout(() => {
           savedCallback.current();
           handleTick();

@@ -49,13 +49,19 @@ function generateStar(size: number) {
 }
 
 function SparklyStar(props: StarProps & { left: number; top: number }) {
+  const size = `${props.size}px`;
   return (
     <span
       className="text-[0px] absolute pointer-events-none z-[1] inline-block -translate-x-1/2 -translate-y-1/2"
-      style={{ top: `${props.top}%`, left: `${props.left}%` }}
+      style={{
+        top: `${props.top}%`,
+        left: `${props.left}%`,
+        width: size,
+        height: size,
+      }}
     >
-      <span className="inline-block text-[0px] animate-growshrink">
-        <span className="inline-block text-[0px] animate-halfspin">
+      <span className="w-full h-full inline-block text-[0px] animate-growshrink">
+        <span className="w-fullh-full inline-block text-[0px] animate-halfspin">
           <Star {...props} />
         </span>
       </span>

@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+import DarkModeToggle from "./DarkModeToggle";
+
 function Header() {
   return (
     <header className="py-4">
@@ -9,7 +11,8 @@ function Header() {
             prn
           </a>
         </Link>
-        <div className="ml-auto flex space-x-4">
+        <div className="ml-auto flex items-center space-x-2 sm:space-x-4">
+          <DarkModeToggle />
           <Link href="/resume">
             <a className="button button-link">Résumé</a>
           </Link>

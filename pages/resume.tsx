@@ -16,7 +16,7 @@ function Resume() {
         <meta property="og:image" content={prnOgImage.src} />
       </Head>
       <div>
-        <div className="prose mx-auto mt-24">
+        <div className="prose dark:prose-light mx-auto mt-24">
           <h1 className="text-center">Résumé</h1>
           <p className="text-center text-sm">Phillip Raffnsøe Nilsson</p>
           <p className="text-center text-xs">

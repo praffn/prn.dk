@@ -18,6 +18,9 @@
   @apply bg-transparent;
   @apply hover:bg-gray-100;
   @apply focus:ring-gray-200;
+
+  @apply dark:hover:bg-gray-700;
+  @apply dark:focus:ring-gray-500;
 }
 
 ::selection {

@@ -68,12 +68,34 @@ module.exports = {
               },
             },
           },
+          light: {
+            css: {
+              color: theme("colors.gray.300"),
+              h1: {
+                color: theme("colors.gray.50"),
+              },
+              h2: {
+                color: theme("colors.gray.50"),
+              },
+              h3: {
+                color: theme("colors.gray.50"),
+              },
+              h4: {
+                color: theme("colors.gray.50"),
+              },
+              a: {
+                color: theme("colors.white"),
+              },
+            },
+          },
         };
       },
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      typography: ["dark"],
+    },
   },
   plugins: [require("@tailwindcss/typography")],
 };

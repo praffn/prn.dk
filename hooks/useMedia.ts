@@ -13,9 +13,19 @@ export default function useMedia(query: string, defaultState = false) {
       setState(mql.matches);
     };
 
-    mql.addEventListener("change", onChange);
+    if (typeof mql.addEventListener === "function") {
+      mql.addEventListener("change", onChange);
+    } else {
+      mql.addListener(onChange);
+    }
 
-    return () => mql.removeEventListener("change", onChange);
+    return () => {
+      if (typeof mql.addEventListener === "function") {
+        mql.removeEventListener("change", onChange);
+      } else {
+        mql.removeListener(onChange);
+      }
+    };
   }, [query]);
 
   return state;

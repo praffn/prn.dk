@@ -56,16 +56,19 @@ function DarkModeToggle() {
 
   useEffect(() => {
     transitionRef.start();
-  }, [darkModeEnabled]);
+  }, [transitionRef, darkModeEnabled]);
 
   useEffect(() => {
     document.documentElement.classList.toggle("dark", darkModeEnabled);
   }, [darkModeEnabled]);
 
-  const toggleSystem = useCallback((event: MouseEvent<HTMLButtonElement>) => {
-    event.preventDefault();
-    enableSystemMode();
-  }, []);
+  const toggleSystem = useCallback(
+    (event: MouseEvent<HTMLButtonElement>) => {
+      event.preventDefault();
+      enableSystemMode();
+    },
+    [enableSystemMode]
+  );
 
   const ariaLabel = `Toggle ${otherMode} mode`;
 

@@ -25,7 +25,7 @@ function Star({ points, size = 20, color = "black" }: StarProps) {
       _points.push(center - radius * Math.cos(i * angle));
     }
     return _points.join(",");
-  }, [points]);
+  }, [points, size]);
 
   return (
     <svg width={size} height={size} fill={color}>

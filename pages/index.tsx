@@ -5,7 +5,7 @@ import Sparkle from "../components/Sparkle";
 
 export default function Home() {
   return (
-    <main>
+    <>
       <Head>
         <title>Phillip Raffnsøe Nilsson</title>
         <meta
@@ -59,6 +59,6 @@ export default function Home() {
           </p>
         </div>
       </div>
-    </main>
+    </>
   );
 }

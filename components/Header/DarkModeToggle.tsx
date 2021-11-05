@@ -22,14 +22,14 @@ const icons: Record<
   (props: AnimatedProps<{ style: CSSProperties }>) => React.ReactElement
 > = {
   dark: ({ style }) => (
-    <animated.div className="absolute w-full h-full" style={style}>
+    <animated.span className="block absolute w-full h-full" style={style}>
       <MoonIcon />
-    </animated.div>
+    </animated.span>
   ),
   light: ({ style }) => (
-    <animated.div className="absolute w-full h-full" style={style}>
+    <animated.span className="block absolute w-full h-full" style={style}>
       <SunIcon />
-    </animated.div>
+    </animated.span>
   ),
 };
 
@@ -83,12 +83,12 @@ function DarkModeToggle() {
         <span className="sr-only">
           Current mode: {currentMode}. Click to change to {otherMode} mode
         </span>
-        <div className=" w-5 h-5 relative">
+        <span className="block w-5 h-5 relative">
           {transitions((style) => {
             const Page = icons[currentMode];
             return <Page style={style} />;
           })}
-        </div>
+        </span>
       </button>
     </>
   );

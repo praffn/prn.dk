@@ -1,14 +1,12 @@
 import React, {
   CSSProperties,
   useEffect,
-  ReactNode,
-  useState,
   useCallback,
   MouseEvent,
 } from "react";
 import SunIcon from "../../assets/icons/sun.svg";
 import MoonIcon from "../../assets/icons/moon.svg";
-import useDarkMode, { DarkModeState } from "../../hooks/useDarkMode";
+import useDarkMode from "../../hooks/useDarkMode";
 import {
   animated,
   AnimatedProps,
@@ -16,6 +14,7 @@ import {
   useSpringRef,
   config,
 } from "@react-spring/web";
+import Tippy from "@tippyjs/react";
 
 const icons: Record<
   "dark" | "light",
@@ -73,7 +72,7 @@ function DarkModeToggle() {
   const ariaLabel = `Toggle ${otherMode} mode`;
 
   return (
-    <>
+    <Tippy content={ariaLabel} placement="left" arrow>
       <button
         className="block overflow-hidden rounded-full p-2 hover:bg-gray-100 dark:hover:bg-gray-700 outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-500"
         onClick={toggle}
@@ -90,7 +89,7 @@ function DarkModeToggle() {
           })}
         </span>
       </button>
-    </>
+    </Tippy>
   );
 }
 

@@ -1,5 +1,6 @@
 import { AppProps } from "next/app";
 import "../styles/globals.css";
+import "tippy.js/dist/tippy.css";
 import DefaultLayout from "../layouts/DefaultLayout";
 
 function MyApp({ Component, pageProps }: AppProps) {

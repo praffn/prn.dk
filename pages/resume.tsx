@@ -102,9 +102,14 @@ function Resume() {
           </p>
           <hr />
           <h2>Work Experience</h2>
+          <h3>Senior Software Engineer</h3>
+          <p>
+            January 2022 - Present <br />
+            Ageras Group, Copenhagen
+          </p>
           <h3>Full Stack Developer</h3>
           <p>
-            2019-current <br />
+            April 2019 - December 2021 <br />
             Signifly, Copenhagen
           </p>
           <h4>Responsibilities</h4>
@@ -157,7 +162,7 @@ function Resume() {
           </ul>
           <h3>Freelance Software Developer</h3>
           <p>
-            2016-2019 <br />
+            August 2016 - Present <br />
             Freelance
           </p>
           <h4>Responsibilities</h4>
@@ -196,7 +201,7 @@ function Resume() {
           </ul>
           <h3>Frontend Developer</h3>
           <p>
-            2015-2016 <br />
+            June 2015 - August 2016 <br />
             Frankly A/S
           </p>
           <h4>Responsibilities</h4>

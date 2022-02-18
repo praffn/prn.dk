@@ -50,10 +50,14 @@ export default function Home() {
             responsive websites and digital solutions.
           </p>
           <p>
-            I've been working freelance and at various Danish digital agencies.
-            I'm currently working at{" "}
-            <a href="https://signifly.com" className="underline">
-              Signifly
+            I've been working freelance and at various digital agencies and tech
+            companies. I'm currently a senior software engineer at{" "}
+            <a
+              href="https://ageras.group/"
+              className="underline"
+              rel="nofollow"
+            >
+              Ageras Group
             </a>
             .
           </p>

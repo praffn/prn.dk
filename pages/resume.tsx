@@ -3,6 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import prnImage from "../public/images/prn.jpg";
 import prnOgImage from "../public/images/resume-prn-og.jpg";
+import Alert from "../components/Alert";
 
 function Resume() {
   return (
@@ -18,6 +19,7 @@ function Resume() {
       <div>
         <div className="prose dark:prose-light mx-auto mt-24">
           <h1 className="text-center">Résumé</h1>
+
           <p className="text-center text-sm">Phillip Raffnsøe Nilsson</p>
           <p className="text-center text-xs">
             Last updated on <time dateTime="2021-10-02">October 2, 2021</time>
@@ -44,6 +46,15 @@ function Resume() {
               Twitter
             </a>
           </p>
+
+          <aside className="mt-12">
+            <Alert>
+              <p className="m-0">
+                I'm not currently looking for new opportunities.
+              </p>
+            </Alert>
+          </aside>
+
           <h2>Profile</h2>
           <p>
             28-year-old full stack software developer with 8 years of experience

@@ -99,18 +99,6 @@ function Resume() {
             like Figma and Sketch and are quite comfortable in Illustrator and
             Photoshop (and to a lesser extent Blender)
           </p>
-          <h3>When I'm not developing</h3>
-          <p>
-            I live in Hellerup, Denmark with my boyfriend who is currently
-            finishing his masters in economics.
-          </p>
-          <p>
-            I love retro gaming and besides playing old 8-bit games I
-            particularly enjoy tinkering with antique hardware emulation like
-            Gameboys and NES. Besides that, I'm a gourmand and enjoy eating
-            great food just as much as I enjoy watching shows about it, reading
-            about it and cooking and experimenting with it myself.
-          </p>
           <hr />
           <h2>Work Experience</h2>
           <h3>Senior Software Engineer</h3>

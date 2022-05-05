@@ -9,7 +9,7 @@ function Resume() {
   return (
     <>
       <Head>
-        <title>Résumé - Phillip Raffnsøe Nilsson</title>
+        <title>Resume - Phillip Raffnsøe Nilsson</title>
         <meta
           name="description"
           content="Resume for full stack software developer Phillip Raffnsøe Nilsson"
@@ -18,7 +18,7 @@ function Resume() {
       </Head>
       <div>
         <div className="prose dark:prose-light mx-auto mt-24">
-          <h1 className="text-center">Résumé</h1>
+          <h1 className="text-center">Resume</h1>
 
           <p className="text-center text-sm">Phillip Raffnsøe Nilsson</p>
           <p className="text-center text-xs">

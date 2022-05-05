@@ -14,7 +14,7 @@ function Header() {
         <div className="ml-auto flex items-center space-x-2 sm:space-x-4">
           <DarkModeToggle />
           <Link href="/resume">
-            <a className="button button-link">Résumé</a>
+            <a className="button button-link">Resume</a>
           </Link>
           <a href="mailto:phillip@praffn.dk" className="button button-primary">
             Get in touch

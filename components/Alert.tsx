@@ -1,3 +1,5 @@
+"use client";
+
 import { ReactNode, useState } from "react";
 
 import CloseIcon from "../assets/icons/close.svg";

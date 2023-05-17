@@ -1,3 +1,5 @@
+"use client";
+
 // Inspired by Josh W. Comeau
 // https://www.joshwcomeau.com/react/animated-sparkles-in-react/
 

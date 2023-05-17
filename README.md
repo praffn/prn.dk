@@ -1,6 +1,6 @@
 # prn.dk
 
-![](assets/prn-clay.png)
+![](assets/images/prn-clay.png)
 
 Personal homepage using [Next.js](https://nextjs.org/).
 

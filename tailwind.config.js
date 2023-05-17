@@ -2,21 +2,18 @@ const defaultConfig = require("tailwindcss/defaultConfig");
 const { rotate, scale } = require("tailwindcss/defaultTheme");
 
 const fontFamilyDisplay = [
-  "DM Serif Display",
+  "var(--font-dm-serif-display)",
   defaultConfig.theme.fontFamily.sans,
 ];
 
 module.exports = {
   mode: "jit",
-  content: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./app/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   darkMode: "class",
   theme: {
     fontFamily: {
       display: fontFamilyDisplay,
-      sans: ["Inter", defaultConfig.theme.fontFamily.sans],
+      sans: ["var(--font-inter)", defaultConfig.theme.fontFamily.sans],
     },
     extend: {
       colors: {

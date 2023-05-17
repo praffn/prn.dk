@@ -1,19 +1,15 @@
-import Head from "next/head";
 import Image from "next/image";
-import prnClayImage from "../assets/prn-clay.png";
+import prnClayImage from "../assets/images/prn-clay.png";
 import Sparkle from "../components/Sparkle";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  description: "Personal website for Phillip Raffnsøe Nilsson",
+};
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Phillip Raffnsøe Nilsson</title>
-        <meta
-          name="description"
-          content="Personal website for Phillip Raffnsøe Nilsson"
-        />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <div className="border-b border-gray-300">
         <div className="flex flex-col md:flex-row items-center">
           <div className="mt-8 md:mt-0 flex-1 flex-shrink-0">

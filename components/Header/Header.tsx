@@ -1,7 +1,7 @@
 import Link from "next/link";
-import va from "@vercel/analytics";
 
 import DarkModeToggle from "./DarkModeToggle";
+import ContactButton from "./ContactButton";
 
 function Header() {
   return (
@@ -18,13 +18,7 @@ function Header() {
           <Link href="/resume" className="button button-link">
             Resume
           </Link>
-          <a
-            onClick={() => va.track("Email contact clicked")}
-            href="mailto:phillip@praffn.dk"
-            className="button button-primary"
-          >
-            Get in touch
-          </a>
+          <ContactButton email="phillip@praffn.dk">Get in touch</ContactButton>
         </div>
       </div>
     </header>

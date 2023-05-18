@@ -30,6 +30,7 @@ export default function Home() {
             <div className="max-w-xs  md:max-w-lg m-auto text-[0px]">
               <Image
                 placeholder="blur"
+                priority
                 src={prnClayImage}
                 alt="Claylike cartoon 3D rendering of Phillip Raffnsøe Nilsson giving thumbs-up"
               />

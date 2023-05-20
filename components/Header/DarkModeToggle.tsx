@@ -6,9 +6,6 @@ import React, {
   useCallback,
   MouseEvent,
 } from "react";
-import SunIcon from "../../assets/icons/sun.svg";
-import MoonIcon from "../../assets/icons/moon.svg";
-import useDarkMode from "../../hooks/useDarkMode";
 import {
   animated,
   AnimatedProps,
@@ -16,7 +13,11 @@ import {
   useSpringRef,
   config,
 } from "@react-spring/web";
+
 import Tippy from "@tippyjs/react";
+import SunIcon from "@/assets/icons/sun.svg";
+import MoonIcon from "@/assets/icons/moon.svg";
+import useDarkMode from "@/hooks/useDarkMode";
 
 const icons: Record<
   "dark" | "light",

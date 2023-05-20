@@ -5,8 +5,8 @@
 
 import { ReactNode, useCallback, useMemo, useState } from "react";
 import usePrefersReducedMotion from "../hooks/usePrefersReducedMotion";
-import useRandomInterval from "../hooks/useRandomInterval";
-import { randomInt } from "../util/random";
+import useRandomInterval from "@/hooks/useRandomInterval";
+import { randomInt } from "@/util/random";
 
 interface StarProps {
   points: number;

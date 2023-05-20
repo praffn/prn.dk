@@ -2,7 +2,7 @@
 
 import { ReactNode, useState } from "react";
 
-import CloseIcon from "../assets/icons/close.svg";
+import CloseIcon from "@/assets/icons/close.svg";
 
 interface AlertProps {
   children: ReactNode;

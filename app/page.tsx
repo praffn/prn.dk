@@ -1,6 +1,6 @@
 import Image from "next/image";
-import prnClayImage from "../assets/images/prn-clay.png";
-import Sparkle from "../components/Sparkle";
+import prnClayImage from "@/assets/images/prn-clay.png";
+import Sparkle from "@/components/Sparkle";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

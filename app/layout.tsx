@@ -16,10 +16,10 @@ const dm_serif_display = DM_Serif_Display({
   variable: "--font-dm-serif-display",
 });
 
-import SkipToContent from "../components/SkipToContent/SkipToContent";
-import Header from "../components/Header/Header";
+import SkipToContent from "@/components/SkipToContent/SkipToContent";
+import Header from "@/components/Header/Header";
 
-import "../styles/globals.css";
+import "@/styles/globals.css";
 import "tippy.js/dist/tippy.css";
 
 export const metadata: Metadata = {

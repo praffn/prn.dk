@@ -1,7 +1,7 @@
 import Image from "next/image";
-import prnImage from "../../assets/images/prn.jpg";
-import prnOgImage from "../../assets/images/resume-prn-og.jpg";
-import Alert from "../../components/Alert";
+import prnImage from "@/assets/images/prn.jpg";
+import prnOgImage from "@/assets/images/resume-prn-og.jpg";
+import Alert from "@/components/Alert";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

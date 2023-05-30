@@ -103,6 +103,29 @@ export default function Resume() {
           January 2022 - Present <br />
           Ageras Group, Copenhagen
         </p>
+        <h4>Responsibilities</h4>
+        <ul>
+          <li>
+            Lead developer for the business loan and credit line platform Ageras
+            Lending; scoping, planning and driving future development.
+          </li>
+          <li>
+            Developed key components and infrastructure: KYC
+            (Know-Your-Customer) flow, scheduled interest accrual, automated
+            ledger syncing, automated payment reminders.
+          </li>
+          <li>
+            Collaborated closely with cross-organizational teams across
+            different entities withing the company to seamlessly integrate our
+            product offering into their respective products
+          </li>
+          <li>
+            Conducted weekly status reports to stakeholders, ensuring effective
+            communication and alignment on project progress, deliverables and
+            OKRs
+          </li>
+        </ul>
+        <h4>Notable achievements</h4>
         <h3>Full Stack Developer</h3>
         <p>
           April 2019 - December 2021 <br />

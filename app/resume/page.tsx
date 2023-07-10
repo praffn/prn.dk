@@ -21,7 +21,7 @@ export default function Resume() {
 
         <p className="text-center text-sm">Phillip Raffnsøe Nilsson</p>
         <p className="text-center text-xs">
-          Last updated on <time dateTime="2021-10-02">October 2, 2021</time>
+          Last updated on <time dateTime="2023-06-10">June 10, 2023</time>
         </p>
         <div className="mt-8 mb-8 w-32 sm:w-40 md:w-48 mx-auto rounded-full overflow-hidden text-[0px]">
           <Image
@@ -46,17 +46,9 @@ export default function Resume() {
           </a>
         </p>
 
-        <aside className="mt-12">
-          <Alert>
-            <p className="m-0">
-              I'm not currently looking for new opportunities.
-            </p>
-          </Alert>
-        </aside>
-
         <h2>Profile</h2>
         <p>
-          29-year-old full stack software developer with 8 years of experience
+          30-year-old full stack software developer with 8 years of experience
           in modern web technologies, fintech, e-commerce solutions and API
           development. I consider myself a programming language polyglot but
           with a strong preference for JavaScript/TypeScript.

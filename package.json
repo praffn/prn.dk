@@ -12,7 +12,7 @@
   "dependencies": {
     "@react-spring/web": "^9.7.3",
     "@svgr/webpack": "^8.1.0",
-    "@tailwindcss/typography": "^0.5.9",
+    "@tailwindcss/typography": "^0.5.10",
     "@tippyjs/react": "^4.2.6",
     "@vercel/analytics": "^1.0.2",
     "gray-matter": "^4.0.3",

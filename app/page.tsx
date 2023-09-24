@@ -3,17 +3,13 @@ import prnClayImage from "@/assets/images/prn-clay.png";
 import Sparkle from "@/components/Sparkle";
 import { Metadata } from "next";
 
-export const metadata: Metadata = {
-  description: "Personal website for Phillip Raffnsøe Nilsson",
-};
-
 export default function Home() {
   return (
     <>
       <div className="border-b border-gray-300">
         <div className="flex flex-col md:flex-row items-center">
           <div className="mt-8 md:mt-0 flex-1 flex-shrink-0">
-            <p className="font-display text-center max-w-xs md:max-w-none md:text-left text-4xl md:text-5xl lg:text-7xl">
+            <h1 className="font-display text-center max-w-xs md:max-w-none md:text-left text-4xl md:text-5xl lg:text-7xl">
               I’m Phillip.
               <br />I build{" "}
               <span className="text-watermelon-500">
@@ -24,7 +20,7 @@ export default function Home() {
                   experiences
                 </Sparkle>
               </span>
-            </p>
+            </h1>
           </div>
           <div className="mt-8 md:mt-0 flex-1 flex-shrink-0">
             <div className="max-w-xs  md:max-w-lg m-auto text-[0px]">

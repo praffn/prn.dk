@@ -7,8 +7,11 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Resume",
   description:
-    "Resume for full stack software developer Phillip Raffnsøe Nilsson",
+    "Explore my detailed software engineering resume, highlighting my skills, experience, and contributions. Contact me for professional opportunities and collaborations.",
   openGraph: {
+    title: "Resume",
+    description:
+      "Explore my detailed software engineering resume, highlighting my skills, experience, and contributions. Contact me for professional opportunities and collaborations.",
     images: [prnOgImage.src],
   },
 };

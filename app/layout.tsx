@@ -27,9 +27,24 @@ export const metadata: Metadata = {
     default: "Phillip Raffnsøe Nilsson",
     template: "%s | Phillip Raffnsøe Nilsson",
   },
+  description:
+    "Experienced software engineer passionate about coding and problem-solving. Explore my journey, skills, and achievements on my resume. Let's connect and collaborate for the next big project!",
   keywords: ["developer", "full stack", "freelance", "software engineer"],
+  openGraph: {
+    title: {
+      default: "Phillip Raffnsøe Nilsson",
+      template: "%s | Phillip Raffnsøe Nilsson",
+    },
+    description:
+      "Experienced software engineer passionate about coding and problem-solving. Explore my journey, skills, and achievements on my resume. Let's connect and collaborate for the next big project!",
+  },
   creator: "Phillip Raffnsøe Nilsson",
 };
+
+// export const metadata: Metadata = {
+//   description:
+//     "",
+// };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (

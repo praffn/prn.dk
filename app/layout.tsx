@@ -2,6 +2,7 @@ import { ReactNode } from "react";
 import { Metadata } from "next";
 import { DM_Serif_Display, Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -59,6 +60,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           {children}
         </main>
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
